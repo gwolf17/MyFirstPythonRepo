@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <h2>Welcome to my plex library</h2>
+    <div class="btn btn-primary">
+        <a href="{% url 'show_info' %}">Show Info</a>
+        <a href="{% url 'show_movie' %}">Show Movie</a>
+        <a href="{% url 'display' %}">Display Movies</a>
+    </div>
+{% endblock %}
